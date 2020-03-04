@@ -9,5 +9,5 @@ Open VScode and `ctrl+shift+p > latex build recipe > pdflatex + bibtex + pdflate
 or use the cli script provided
 
 ```bash
-sh compile_pdf.sh
+sh compile_pdf.sh 
 ```
