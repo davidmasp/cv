@@ -1,4 +1,4 @@
-name: Build LaTeX document
+name: Build CV document
 on: [push]
 jobs:
   build_latex:
@@ -10,3 +10,8 @@ jobs:
         uses: xu-cheng/latex-action@master
         with:
           root_file: cv.tex
+      - name: update
+        uses: actions/upload-artifact@v2
+        with:
+          name: compiled
+          path: main.pdf
