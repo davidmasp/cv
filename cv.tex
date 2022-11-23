@@ -33,9 +33,9 @@
 \renewcommand{\footrulewidth}{0pt}
 
 % name
-\title{\bfseries\Huge David Mas-Ponte}
+\title{\bfseries\huge David Mas-Ponte}
 % Job
-\author{Bioinformatics - Genomics - Biotechnology}
+\author{Bioinformatics - Genome instability }
 % today's date
 \date{}
 
@@ -48,115 +48,109 @@
 \begin{document}
 
 % Header
-\begin{minipage}[c]{0.65\textwidth}
+% should be 0.65 if adding the picture below
+\begin{minipage}[c]{\textwidth}
 % make title puts the name and mail in the left
 \maketitle
 \end{minipage}
-\begin{minipage}[c]{0.3\textwidth}
+%\begin{minipage}[c]{0.3\textwidth}
 %profile picture
-  \includegraphics[width=.55\textwidth]{profile}
-\end{minipage}
+%  \includegraphics[width=.55\textwidth]{profile}
+%\end{minipage}
 
 
 % Subheader
-\begin{minipage}[c]{0.65\textwidth}
+\begin{minipage}[c]{0.5\textwidth}
   \begin{center}
     \href{mailto:david.mas.p@gmail.com}{david.mas.p@gmail.com}\\
     Barcelona, Spain
   \end{center}
 \end{minipage}
-\begin{minipage}[c]{0.3\textwidth}
+\begin{minipage}[c]{0.5\textwidth}
+  \begin{center}
 \href{https://github.com/davidmasp}{github://davidmasp}
 \includegraphics[height=12pt]{gh}\\
-\href{https://www.linkedin.com/in/davidmasponte/}{linkedin://davidmasponte}
-\includegraphics[height=12pt]{in}\\
 \href{http://david.masponte.com/}{david.masponte.com}
+\end{center}
 \end{minipage}
 
-
-\vspace{0.75cm}
-\rule{.95\textwidth}{0.6pt}
+\vspace{0.5cm}
+\rule{.95\textwidth}{0.75pt}
 
 %%%% EDUCATION %%%%
 
+\renewcommand{\arraystretch}{0.7} 
+
 \section*{Education}
 \begin{tabular}{L!{\VRule}R}
-  2015--2017&{\bf M.Sc. in Bioinformatics for Health Sciences}\\
+  2017--2022&{\bf Ph.D. in Biomedicine}\\
+  & Universitat de Barcelona, Barcelona, Spain.\\
+  & {\em \color{black!50} Current }\\[15pt]
+  2015--2017& M.Sc. in Bioinformatics for Health Sciences\\
    & Universitat Pompeu Fabra, Barcelona, Spain.\\
    & {\em \color{black!50} Specialization in Genomics - GPA: 9 / 10 }\\[15pt]
-  2014&Exchange Student \\
-   &  McGill University, Montreal, Canada.\\
-   & {\em \color{black!50} Academic international exchange}\\[15pt]
   2011--2015&B.Sc. in Biotechnology\\
    & Universitat Autonoma de Barcelona, Spain.\\
+   & International exchange (6 months), McGill University, Montreal, Canada\\
    & { \em \color{black!50} GPA: 8.5 / 10}
 \end{tabular}
+
+\renewcommand{\arraystretch}{1.5} 
 
 %%%% Research %%%%
 \section*{Research Experience}
 \begin{tabular}{L!{\VRule}R}
+01 2022 - &{\bf Stanford University } - {\em \color{black!70} Visiting Student Researcher }   \\
+ & As part of my Ph.D. research I am visiting the laboratory of Ashby Morrison where
+I study the susceptibility of DNA to UV dammage in human cell lines and tissues.
+I am analysing a comprehensive dataset of genomic and epigenomic data to quantify
+ the role of UV damage in the determination of somatic mutation rates. {\bf Ashby Morrison's Lab} \\
 08 2017 -  &{\bf Institute for Research in Biomedicine } - {\em \color{black!70} Ph.D. Student }   \\
- & My Ph.D. project is enclosed in the field of computational genetics, studying how mutational processes shape the eukaryotic genomes. We use statistical and machine learning techniques to extract patterns from massive genomic data sets. In particular, we are interested in unraveling mechanisms of local hypermutation both somatically and in populations. {\bf Fran Supek's Lab (AGENDAS)}.\\[15pt]
+ & In my Ph.D. project, I study how somatic mutations accumulate in the genome of both
+ tumor and healthy cells.
+  We use statistical and machine learning techniques to extract patterns or {\em signatures}
+  from available sequencing data sets. We are particularly interested in unraveling 
+  mechanisms of local variability in mutation rates, such as the mutation clusters generated 
+  by the APOBEC3 gene family and the effects of epigenetic features on DNA. {\bf Fran Supek's Lab}\\
 2016 - 2017&{\bf Centre for Genomic Regulation (CRG) } - {\em \color{black!70} Master Science Research Thesis  }\\
- & My Master Thesis was focused in the link between lncRNAs' subcellular localization and their function. I have also developed a web-based DB using R and SQL to make subcellular expression data available to the scientific community. {\bf Roderic Guigo's Lab, tutored by Rory Johnson}.\\[15pt]
+ & During my master thesis I studied the link between lncRNAs' 
+ subcellular localization and their function. I characterized 
+ the associated variability and systematically compared against 
+ protein coding genes. I also developed a web-based application 
+ to make subcellular expression data of lncRNAs available to the
+  scientific community. {\bf Roderic Guigo's Lab, tutored by Rory Johnson}\\
 2015-2016 & {\bf Institute of Evolutionary Biology (IBE) } - {\em \color{black!70} Part time Research Internship}\\
- & I studied the evolutionary processes surrounding the RHD gene in Western Mediterranean populations in order to unravel demographic ({\em drift}) or adaptive ({\em selection}) processes. {\bf David Comas' Lab}\\[15pt]
-06-08 2014 & {\bf Molecular Biology Institute of Barcelona (IBMB) }- {\em \color{black!70} Research Internship}\\
- &  I took part in the study of the CIC (CapICua) protein in Drosophila development. I gained research skills in fruit fly genetics, in \textit{in situ} hybridization and in recombinant DNA techniques for CRISPR/Cas9 set up. {\bf Gerardo Jimenez's Lab}\\[15pt]
+ & During the first year of my master's program, I participated in the generation
+ and analysis of sequencing data to study the demographic and adaptive processes shaping the RhD blood group
+  system in the Basque population. {\bf David Comas' Lab}\\[15pt]
 \end{tabular}
 
 \vspace{10pt}
 
 %%%% Programing %%%%
 
-\begin{minipage}{.5\linewidth}
-\section*{Code}
-\begin{tabular}{L!{\VRule}R}
-\tikz\draw[black,fill=black] (0,0) circle (.7ex); 
-\tikz\draw[black,fill=black] (0,0) circle (.7ex);
-\tikz\draw[black,fill=black] (0,0) circle (.7ex); & R, Python, Bash \& nextflow  \\
-\tikz\draw[black,fill=black] (0,0) circle (.7ex); 
-\tikz\draw[black,fill=black] (0,0) circle (.7ex);
-\tikz\draw[black] (0,0) circle (.7ex); & Docker, git  \&  \LaTeX \\
-\tikz\draw[black,fill=black] (0,0) circle (.7ex); 
-\tikz\draw[black] (0,0) circle (.7ex);
-\tikz\draw[black] (0,0) circle (.7ex); & SQL, JavaScript \& HTML/CSS
-\end{tabular}
-\end{minipage}
-\begin{minipage}{.5\linewidth}
-%%%% lang %%%%
-\section*{Languages}
-\begin{tabular}{L!{\VRule}R}
-Catalan & Mother tongue\\
-Spanish & Bilingual Proficiency\\
-{\bf English}&{\bf Proficient (CAE-C2 2021)}
-\end{tabular}
-\end{minipage}
-
-
 %%%% pubs %%%%
-
+\renewcommand{\arraystretch}{1.5} 
 \bibliographystyle{unsrtnat}
 \nobibliography{dmas}
 
 \section*{Selected Publications} 
 
 Find a complete list at \href{https://orcid.org/0000-0001-7409-305X}{orcid.org/0000-0001-7409-305X}.
-Lead author publications highlighted in \textbf{bold}.
+Lead author publications highlighted with * .
 \\
 \\
+% if you remove the \textbf{} it breaks
 \begin{tabular}{L!{\VRule}R}
-2020 & \textbf{\bibentry{mas_dna_2020}} - {\em \color{black!70} Peer-reviewed Journal}\\
- &  \bibentry{carlevaro-fita_cancer_2020} - {\em \color{black!70} Peer-reviewed Journal}\\[60pt]
- 2019 &  \textbf{} \bibentry{salvadores_passenger_2019}- {\em \color{black!70} Peer-reviewed Journal} \\
-& \bibentry{franco_whole_2019} - {\em \color{black!70} Peer-reviewed Journal} \\[60pt]
-2017 &\textbf{\bibentry{mas-ponte_lncatlas_2017} } - {\em \color{black!70} Peer-reviewed Journal}\\[5pt]
+2022 &\textbf{} * \bibentry{mas-ponte_spectrum_2022} - {\em \color{black!70} Review article} \\
+2020 &\textbf{} * \bibentry{mas_dna_2020} - {\em \color{black!70} Peer-reviewed}\\
+2019 &\textbf{} \bibentry{franco_whole_2019} - {\em \color{black!70} Peer-reviewed} \\
+2018 &\textbf{} \bibentry{flores-bello_sequence_2018} - {\em \color{black!70} Peer-reviewed} \\[30pt]
+2017 &\textbf{} * \bibentry{mas-ponte_lncatlas_2017} - {\em \color{black!70} Peer-reviewed}\\[5pt]
 \end{tabular}
 
 
 \section*{Selected Conferences}
-
-
 
 \begin{tabular}{L!{\VRule}R}
 2021 &\textbf{}\bibentry{mas_EACR_2021} - {\em \color{black!70} Peer-reviewed Conference - Short talk} \\[30pt]
@@ -167,6 +161,8 @@ Lead author publications highlighted in \textbf{bold}.
 %%%% SA %%%%
 \section*{Other scientific contributions \& Awards}
 
+\renewcommand{\arraystretch}{1} 
+
 \begin{tabular}{L!{\VRule}R}
 2021 & \textbf{SCB award to the best scientific article} -  {\em \color{black!70} Nominee}   \\
 & The \textit{Societat Catalana de Biologia} (SCB) is the society that groups all professional and academic biologist
@@ -175,8 +171,42 @@ in Catalonia. Every year, they award a recognition to the best scientific articl
 & ENABLE is an international scientific conference for Ph.D. Students from all over the world co-organized by 4 European research centers (IRB Barcelona, RIMLS, CPR, and SEMM) funded by the European Union Horizon 2020 program. The third edition was held in the city of Nijmegen in the Netherlands with a total of 229 Ph.D. students and postdocs coming from 26 different countries.
  \end{tabular}
 
+ \clearpage
+
+%%%% SA %%%%
+\section*{Working papers}
+
+This section contains abstracts for manuscripts currently in preparation.
+
+\bigskip
+
+\begin{tabular}{L!{\VRule}R}
+2022 & \textbf{Variable DNA methylation underlies mutation rate variability at the mesoscale in human somatic cells} -  {\em \color{black!70} Manuscript in preparation}   \\
+& 
+
+\bigskip
+
+\textbf{Abstract}:
 
 
 
+The cytosine methylation in CpG dinucleotides is pervasive in mammalian genomes and its variability across regions can regulate gene expression and define cell differentiation. Although the role of DNA methylation in gene regulation is well understood, how the local variation in DNA methylation shapes somatic mutation rates is less well explored. Here, we show that hypomethylated (UMR) regions are also generally hypomutated in a wide range of human tumors and healthy somatic tissues.
+
+\medskip
+
+Remarkably, the exposure of the tissue to various mutational processes shapes its predisposition to this effect: while there is depletion in the mutation rates resulting from signatures of deamination of methylated cytosines, UV light, POLE and MMR deficiency, there is an increase in mutation rates from signatures of AID/APOBEC cytosine deaminase enzymes in the UMRs. Therefore, hypomethylated DNA loci can be either mutational coldspots or hotspots, depending on the mutagen exposure history of a particular cell.
+
+\medskip
+
+In addition to these genome-wide distributed UMRs we also identify several kilobases at the 5’ ends of gene bodies as commonly hypomethylated and thus hypomutated. Clustering genes by methylation profiles also yielded variability in their mutation rate gradients along the gene body. Interestingly, lowly expressed genes have a less steep gradient due to a higher relative methylation of their 5’ end, and polycomb repressed genes also show no relative hypomutation due to the lack of methylation at their gene body.
+
+
+\medskip
+
+
+Overall, we suggest DNA methylation is an important determinant of mesoscale, sub-genic, resolution mutation rate variability in human somatic tissues.
+
+
+\end{tabular}
 
 \end{document}
