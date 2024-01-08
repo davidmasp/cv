@@ -30,3 +30,4 @@ jobs:
       with:
         name: compiled-CV
         path: cv.pdf
+        compression-level: 0 
