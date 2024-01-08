@@ -1,16 +1,34 @@
 # David Mas-Ponte CV
 
-This is a repository to compile my CV.
+This is a repository to host and compile my CV.
+
+## Update
+
+For updating either talks, posters of articles change the
+informaiton in the `bibtex` files and update the
+bibliography to generate `yaml`. If talk or lead author
+change the two arrays in the begining of the script.
+
+The rest of the information is currently hardcoded in the
+`.typ` scrypt.
 
 ## Usage
 
-In linux, use the `bash` script provided.
+To compile the project:
 
-```bash
-sh scripts/compile_pdf.sh 
+```
+make all
 ```
 
-A compiled version is stored as a release
-[here](https://github.com/davidmasp/davidmaspcv/releases/).
+Compiling the pdf requires [typst](https://github.com/typst/typst).
 
-An synced overleaf version of this repository exists [here](https://www.overleaf.com/project/60f5385361888611e14e8036).
+### Generate YAML files
+
+To regenerate the YAML files form the bibtex files use:
+
+```
+hayagriva talks.bib  > talks.yaml
+```
+
+Requires [hayagriva](https://github.com/typst/hayagriva)
+

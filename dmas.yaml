@@ -1,0 +1,162 @@
+young2023maternal:
+  type: article
+  title: A maternal germline mutator phenotype in a family affected by heritable colorectal cancer
+  author:
+  - Young, Candice L
+  - Beichman, Annabel C
+  - Mas-Ponte, David
+  - Hemker, Shelby L
+  - Zhu, Luke
+  - Kitzman, Jacob
+  - Shirts, Brian H
+  - Harris, Kelley
+  date: 2023
+  page-range: 2023–12
+  url: https://doi.org/10.1101/2023.12.08.23299304
+  parent:
+    type: periodical
+    title: medRxiv
+    publisher: Cold Spring Harbor Laboratory Press
+mas2023mutation:
+  type: article
+  title: Mutation rate heterogeneity at the sub-gene scale due to local DNA hypomethylation
+  author:
+  - Mas-Ponte, David
+  - Supek, Fran
+  date: 2023
+  page-range: 2023–9
+  url: https://doi.org/10.1101/2023.09.26.559585
+  parent:
+    type: periodical
+    title: bioRxiv
+    publisher: Cold Spring Harbor Laboratory
+mas2022spectrum:
+  type: article
+  title: Spectrum of DNA mismatch repair failures viewed through the lens of cancer genomics and implications for therapy
+  author:
+  - Mas-Ponte, David
+  - McCullough, Marcel
+  - Supek, Fran
+  date: 2022
+  page-range: 383–404
+  url: https://doi.org/10.1042/cs20210682
+  parent:
+    type: periodical
+    title: Clinical Science
+    publisher: Portland Press Ltd.
+    issue: 5
+    volume: 136
+carlevaro2020cancer:
+  type: article
+  title: Cancer LncRNA Census reveals evidence for deep functional conservation of long noncoding RNAs in tumorigenesis
+  author:
+  - Carlevaro-Fita, Joana
+  - Lanzós, Andrés
+  - Feuerbach, Lars
+  - Hong, Chen
+  - Mas-Ponte, David
+  - Pedersen, Jakob Skou
+  - Johnson, Rory
+  date: 2020
+  page-range: 56
+  url: https://doi.org/10.1038/s42003-019-0741-7
+  parent:
+    type: periodical
+    title: Communications biology
+    publisher: Nature Publishing Group UK London
+    issue: 1
+    volume: 3
+mas2020dna:
+  type: article
+  title: DNA mismatch repair promotes APOBEC3-mediated diffuse hypermutation in human cancers
+  author:
+  - Mas-Ponte, David
+  - Supek, Fran
+  date: 2020
+  page-range: 958–968
+  url: https://doi.org/10.1038/s41588-020-0674-6
+  parent:
+    type: periodical
+    title: Nature genetics
+    publisher: Nature Publishing Group US New York
+    issue: 9
+    volume: 52
+franco2019whole:
+  type: article
+  title: Whole genome DNA sequencing provides an atlas of somatic mutagenesis in healthy human cells and identifies a tumor-prone cell type
+  author:
+  - Franco, Irene
+  - Helgadottir, Hafdis T
+  - Moggio, Aldo
+  - Larsson, Malin
+  - Vrtačnik, Peter
+  - Johansson, Anna
+  - Norgren, Nina
+  - Lundin, Pär
+  - Mas-Ponte, David
+  - Nordström, Johan
+  - others
+  date: 2019
+  page-range: 1–22
+  url: https://doi.org/10.1186/s13059-019-1892-z
+  parent:
+    type: periodical
+    title: Genome biology
+    publisher: BioMed Central
+    issue: 1
+    volume: 20
+salvadores2019passenger:
+  type: article
+  title: Passenger mutations accurately classify human tumors
+  author:
+  - Salvadores, Marina
+  - Mas-Ponte, David
+  - Supek, Fran
+  date: 2019
+  page-range: e1006953
+  url: https://doi.org/10.1371/journal.pcbi.1006953
+  parent:
+    type: periodical
+    title: PLoS computational biology
+    publisher: Public Library of Science San Francisco, CA USA
+    issue: 4
+    volume: 15
+flores2018sequence:
+  type: article
+  title: Sequence diversity of the Rh blood group system in Basques
+  author:
+  - Flores-Bello, André
+  - Mas-Ponte, David
+  - Rosu, Miruna E
+  - Bosch, Elena
+  - Calafell, Francesc
+  - Comas, David
+  date: 2018
+  page-range: 1859–1866
+  url: https://doi.org/10.1038/s41431-018-0232-1
+  parent:
+    type: periodical
+    title: European Journal of Human Genetics
+    publisher: Springer International Publishing Cham
+    issue: 12
+    volume: 26
+mas2017lncatlas:
+  type: article
+  title: LncATLAS database for subcellular localization of long noncoding RNAs
+  author:
+  - Mas-Ponte, David
+  - Carlevaro-Fita, Joana
+  - Palumbo, Emilio
+  - Pulido, Toni Hermoso
+  - Guigo, Roderic
+  - Johnson, Rory
+  date: 2017
+  page-range: 1080–1087
+  url: https://doi.org/10.1261/rna.060814.117
+  parent:
+    type: periodical
+    title: Rna
+    publisher: Cold Spring Harbor Lab
+    issue: 7
+    volume: 23
+
