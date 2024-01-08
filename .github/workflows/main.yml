@@ -13,5 +13,15 @@ jobs:
     steps:
     - name: checkout code
       uses: actions/checkout@v3
-    - name: make all
-      run: make all
+    - name: creates assets folder
+      run: mkdir -p assets
+    - name: downloads twitter
+      run: wget -O assets/twitterlogo.svg https://upload.wikimedia.org/wikipedia/commons/6/6f/Logo_of_Twitter.svg
+    - name: downloads gh logo
+      run: wget -O assets/github.zip https://github.githubassets.com/assets/github-mark-c791e9551fe4.zip
+    - name: unzip gh logo
+      run: unzip -d assets assets/github.zip
+    - name: copies gh logo
+      run: cp assets/github-mark/github-mark.svg assets/github-mark.svg
+    - name: compiles pdf
+      run: typst compile cv.typ

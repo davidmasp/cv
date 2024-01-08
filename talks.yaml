@@ -1,0 +1,62 @@
+eshg22:
+  type: article
+  title: Mutation rate variability at the sub-gene scale due to distinct DNA methylation gradients
+  author:
+  - Mas-Ponte, David
+  - Supek, Fran
+  date: 2023
+  url: https://www.nature.com/articles/s41431-023-01480-z
+  parent:
+    type: proceedings
+    title: European Society of Human Genetics (ESHG) Conference
+    publisher: ESHG
+    location: Glasgow, UK
+    parent:
+      type: proceedings
+      title: ESHG
+eacr21:
+  type: article
+  title: Clustered apobec mutagenesis in human tumors
+  author:
+  - Mas-Ponte, David
+  - Supek, Fran
+  date: 2021
+  parent:
+    type: proceedings
+    title: European Association for Cancer Research (EACR) Bioinformatics Conference
+    publisher: EACR
+    location: Virtual
+    parent:
+      type: proceedings
+      title: EACR Bioinformatics
+eccb19:
+  type: article
+  title: 'HyperMut: a method to detect localized hypermutation with stringent control for confounders'
+  author:
+  - Mas-Ponte, David
+  - Supek, Fran
+  date: 2019
+  parent:
+    type: proceedings
+    title: ISMB/ECCB (ISCB) Conference
+    publisher: ISCB
+    location: Basel, Switzerland
+    parent:
+      type: proceedings
+      title: ISMB/ECCB
+embl18:
+  type: article
+  title: Association of localized hypermutation patterns with transcription programs of tumor samples
+  author:
+  - Mas-Ponte, David
+  - Supek, Fran
+  date: 2018
+  parent:
+    type: proceedings
+    title: 'EMBL Conference: From Functional Genomics to Systems Biology'
+    publisher: EMBL
+    location: Heidelberg, Germany
+    parent:
+      type: proceedings
+      title: EMBL Conference
+
