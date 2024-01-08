@@ -25,3 +25,8 @@ jobs:
       run: cp assets/github-mark/github-mark.svg assets/github-mark.svg
     - name: compiles pdf
       run: typst compile cv.typ
+    - name: uploads pdf
+      uses: actions/upload-artifact@v4
+      with:
+        name: compiled-CV
+        path: cv.pdf
