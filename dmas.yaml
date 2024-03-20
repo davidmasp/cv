@@ -1,6 +1,9 @@
 young2023maternal:
   type: article
   title: A maternal germline mutator phenotype in a family affected by heritable colorectal cancer
+  submitted:
+    journal: "Genetics"
+    status: "under review"
   author:
   - Young, Candice L
   - Beichman, Annabel C
@@ -19,6 +22,9 @@ young2023maternal:
     publisher: Cold Spring Harbor Laboratory Press
 mas2023mutation:
   type: article
+  submitted:
+    journal: "Nucleic Acids Research"
+    status: "under review"
   title: Mutation rate heterogeneity at the sub-gene scale due to local DNA hypomethylation
   author:
   - Mas-Ponte, David

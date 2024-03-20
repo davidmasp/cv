@@ -3,8 +3,7 @@
 #let lead_articles = ("mas2023mutation",
                          "mas2022spectrum",
                          "mas2020dna",
-                         "mas2017lncatlas"
-                        )
+                         "mas2017lncatlas")
 
 #let confkeys = ("eshg22", "eacr21")
 
@@ -72,6 +71,14 @@
     let journal = el.at(1).at("parent").at("title")
     if (type == "preprint" and journals_preprint.contains(journal)) or (type != "preprint" and journal not in journals_preprint) {
       let url = el.at(1).at("url")
+      let status_str = ""
+      if (el.at(1).keys().contains("submitted")) {
+        status_str = [
+           #text(fill: gray, style: "italic")[
+             \- #el.at(1).at("submitted").at("status") in #el.at(1).at("submitted").at("journal")
+           ]
+        ]
+      }
       grid(
         columns: (5%, 95%),
         [
@@ -91,11 +98,13 @@
           #text(journal, style: "italic")
           //#chain
           #h(2pt)
+          \- 
           #text(fill: blue)[
             #underline([
                   #link(url)[link]
             ])
           ]
+          #status_str
         ] 
       )
     }
@@ -147,7 +156,7 @@
 
 
 #let sectiontitle(title, annotation) = {
-  v(5pt)
+  v(2pt)
   grid(columns: (75%, 25%),
       column-gutter: 3pt,
       rows: 1,
@@ -190,6 +199,23 @@
     #name
   ],
   align(center)[],
+  align(left)[
+    #place
+  ]
+)
+}
+
+#let item_full_date(timerange1, timerange2, name, place) = {
+  grid(
+  columns: (15%, 85%),
+  column-gutter: 3pt,
+  row-gutter: 5pt,
+  rows: 2,
+  align(left)[#timerange1],
+  align(left)[
+    #name
+  ],
+  align(left)[#timerange2],
   align(left)[
     #place
   ]
@@ -252,6 +278,12 @@
     Kelley Harris lab, Genome Sciences Deptartment, University of Washington
   ])
 
+#item_full_date(
+  [23/11/22],
+  [15/05/23],
+  [Interim Postdoctoral Researcher],
+  [Fran Supek lab, Cancer Biology, Institute for Research in Biomedicine Barcelona])
+
 #item(
   [01-06/2022],
   [Visiting Student Researcher],
@@ -263,7 +295,7 @@
   [2017-2022],
   [PhD Student],
   [
-    Fran Supek lab, Cancer Biology Deptartment, Institute for Research in Biomedicine Barcelona
+    Fran Supek lab, Cancer Biology, Institute for Research in Biomedicine Barcelona
   ])
 
 #item(
