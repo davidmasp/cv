@@ -1,4 +1,23 @@
-eshg22:
+mts24:
+  type: article
+  title: Identification of somatic mutations in sci-ATAC-seq data during human development
+  author:
+  - Mas-Ponte, David
+  - Pan, Yu-Chen
+  - Calderon, Diego
+  - Beichman, Annabel
+  - Harris, Kelley
+  date: 2024
+  url: https://www.mutationmeeting.com/
+  parent:
+    type: proceedings
+    title: Mutations in time and space
+    publisher: University of Edinburgh
+    location: Edinburgh, UK
+    parent:
+      type: proceedings
+      title: MTS
+eshg23:
   type: article
   title: Mutation rate variability at the sub-gene scale due to distinct DNA methylation gradients
   author:
@@ -14,6 +33,21 @@ eshg22:
     parent:
       type: proceedings
       title: ESHG
+eccb22:
+  type: article
+  title: Role of DNA methylation in somatic mutagenesis of human tumors
+  author:
+  - Mas-Ponte, David
+  - Supek, Fran
+  date: 2022
+  parent:
+    type: proceedings
+    title: ECCB Conference
+    publisher: ECCB
+    location: Sitges, Spain
+    parent:
+      type: proceedings
+      title: ECCB
 eacr21:
   type: article
   title: Clustered apobec mutagenesis in human tumors

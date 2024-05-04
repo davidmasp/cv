@@ -1,11 +1,11 @@
 
 
-#let lead_articles = ("mas2023mutation",
+#let lead_articles = ("mas2024mutation",
                          "mas2022spectrum",
                          "mas2020dna",
                          "mas2017lncatlas")
 
-#let confkeys = ("eshg22", "eacr21")
+#let confkeys = ("mts24","eshg23", "eacr21")
 
 #set page(
   paper: "us-letter",
@@ -141,6 +141,7 @@
           }
        ], 
        [
+          #el.at(1).at("title") - 
           #el.at(1).at("parent").at("title") (
             #el.at(1).at("parent").at("location")
           )
@@ -278,12 +279,6 @@
     Kelley Harris lab, Genome Sciences Deptartment, University of Washington
   ])
 
-#item_full_date(
-  [23/11/22],
-  [15/05/23],
-  [Interim Postdoctoral Researcher],
-  [Fran Supek lab, Cancer Biology, Institute for Research in Biomedicine Barcelona])
-
 #item(
   [01-06/2022],
   [Visiting Student Researcher],
@@ -292,7 +287,7 @@
   ])
 
 #item(
-  [2017-2022],
+  [2017-2023],
   [PhD Student],
   [
     Fran Supek lab, Cancer Biology, Institute for Research in Biomedicine Barcelona
@@ -367,6 +362,24 @@
 //  funding
 // jae intro
 // FPI
+
+#item(
+  [2023-2025],
+  [
+    Mahan Postdoctoral Fellowship -
+    #text(fill: blue)[
+            #underline([
+                  #link("https://www.fredhutch.org/en/research/divisions/public-health-sciences-division/research/computational-biology/mahan-fellowship.html")[website]
+            ])
+          ]
+  ],
+  [
+    Herbold Computational Biology Program of the
+    & Institute for Research in Biomedicine (
+    #text(style: "italic")[Fred Hutchinson Cancer Center]
+    )
+    // 
+  ])
 
 #item(
   [2017-2022],
@@ -465,12 +478,7 @@
   "https://scb.iec.cat/wp-content/uploads/2021/11/Document_assemblea2021.pdf"
 )
 
-Referee for Evolution, Medicine, and Public Health (2023).
-
-
-
-
-
+Referee for Evolution, Medicine, and Public Health ('23, '24), WoSid: #text(fill: blue)[ #link("https://www.webofscience.com/wos/author/record/JPL-3000-2023")[JPL-3000-2023]].
 
 
 
