@@ -1,12 +1,11 @@
 
 
-#let lead_articles = ("mas2023mutation",
+#let lead_articles = ("mas2024mutation",
                          "mas2022spectrum",
                          "mas2020dna",
-                         "mas2017lncatlas"
-                        )
+                         "mas2017lncatlas")
 
-#let confkeys = ("eshg22", "eacr21")
+#let confkeys = ("mts24","eshg23", "eacr21")
 
 #set page(
   paper: "us-letter",
@@ -72,6 +71,14 @@
     let journal = el.at(1).at("parent").at("title")
     if (type == "preprint" and journals_preprint.contains(journal)) or (type != "preprint" and journal not in journals_preprint) {
       let url = el.at(1).at("url")
+      let status_str = ""
+      if (el.at(1).keys().contains("submitted")) {
+        status_str = [
+           #text(fill: gray, style: "italic")[
+             \- #el.at(1).at("submitted").at("status") in #el.at(1).at("submitted").at("journal")
+           ]
+        ]
+      }
       grid(
         columns: (5%, 95%),
         [
@@ -91,11 +98,13 @@
           #text(journal, style: "italic")
           //#chain
           #h(2pt)
+          \- 
           #text(fill: blue)[
             #underline([
                   #link(url)[link]
             ])
           ]
+          #status_str
         ] 
       )
     }
@@ -132,6 +141,7 @@
           }
        ], 
        [
+          #el.at(1).at("title") - 
           #el.at(1).at("parent").at("title") (
             #el.at(1).at("parent").at("location")
           )
@@ -147,7 +157,7 @@
 
 
 #let sectiontitle(title, annotation) = {
-  v(5pt)
+  v(2pt)
   grid(columns: (75%, 25%),
       column-gutter: 3pt,
       rows: 1,
@@ -190,6 +200,23 @@
     #name
   ],
   align(center)[],
+  align(left)[
+    #place
+  ]
+)
+}
+
+#let item_full_date(timerange1, timerange2, name, place) = {
+  grid(
+  columns: (15%, 85%),
+  column-gutter: 3pt,
+  row-gutter: 5pt,
+  rows: 2,
+  align(left)[#timerange1],
+  align(left)[
+    #name
+  ],
+  align(left)[#timerange2],
   align(left)[
     #place
   ]
@@ -260,10 +287,10 @@
   ])
 
 #item(
-  [2017-2022],
+  [2017-2023],
   [PhD Student],
   [
-    Fran Supek lab, Cancer Biology Deptartment, Institute for Research in Biomedicine Barcelona
+    Fran Supek lab, Cancer Biology, Institute for Research in Biomedicine Barcelona
   ])
 
 #item(
@@ -335,6 +362,24 @@
 //  funding
 // jae intro
 // FPI
+
+#item(
+  [2023-2025],
+  [
+    Mahan Postdoctoral Fellowship -
+    #text(fill: blue)[
+            #underline([
+                  #link("https://www.fredhutch.org/en/research/divisions/public-health-sciences-division/research/computational-biology/mahan-fellowship.html")[website]
+            ])
+          ]
+  ],
+  [
+    Herbold Computational Biology Program of the
+    & Institute for Research in Biomedicine (
+    #text(style: "italic")[Fred Hutchinson Cancer Center]
+    )
+    // 
+  ])
 
 #item(
   [2017-2022],
@@ -433,12 +478,7 @@
   "https://scb.iec.cat/wp-content/uploads/2021/11/Document_assemblea2021.pdf"
 )
 
-Referee for Evolution, Medicine, and Public Health (2023).
-
-
-
-
-
+Referee for Evolution, Medicine, and Public Health ('23, '24), WoSid: #text(fill: blue)[ #link("https://www.webofscience.com/wos/author/record/JPL-3000-2023")[JPL-3000-2023]].
 
 
 

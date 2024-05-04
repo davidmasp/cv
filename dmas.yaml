@@ -1,6 +1,9 @@
 young2023maternal:
   type: article
   title: A maternal germline mutator phenotype in a family affected by heritable colorectal cancer
+  submitted:
+    journal: "Genetics"
+    status: "under review"
   author:
   - Young, Candice L
   - Beichman, Annabel C
@@ -17,19 +20,19 @@ young2023maternal:
     type: periodical
     title: medRxiv
     publisher: Cold Spring Harbor Laboratory Press
-mas2023mutation:
+mas2024mutation:
   type: article
   title: Mutation rate heterogeneity at the sub-gene scale due to local DNA hypomethylation
   author:
   - Mas-Ponte, David
   - Supek, Fran
-  date: 2023
-  page-range: 2023–9
-  url: https://doi.org/10.1101/2023.09.26.559585
+  date: 2024
+  page-range: gkae252
+  url: https://academic.oup.com/nar/advance-article/doi/10.1093/nar/gkae252/7642061
   parent:
     type: periodical
-    title: bioRxiv
-    publisher: Cold Spring Harbor Laboratory
+    title: Nucleic Acids Research
+    publisher: Oxford University Press
 mas2022spectrum:
   type: article
   title: Spectrum of DNA mismatch repair failures viewed through the lens of cancer genomics and implications for therapy
@@ -146,8 +149,6 @@ mas2017lncatlas:
   author:
   - Mas-Ponte, David
   - Carlevaro-Fita, Joana
-  - Palumbo, Emilio
-  - Pulido, Toni Hermoso
   - Guigo, Roderic
   - Johnson, Rory
   date: 2017

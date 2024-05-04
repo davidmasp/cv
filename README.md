@@ -2,12 +2,27 @@
 
 This is a repository to host and compile my CV.
 
-## Update
+## Update publications
 
-For updating either talks, posters of articles change the
+For updating either talks, posters or articles, first change the
 informaiton in the `bibtex` files and update the
-bibliography to generate `yaml`. If talk or lead author
-change the two arrays in the begining of the script.
+bibliography to generate `yaml`.
+
+```
+hayagriva talks.bib  > talks.yaml
+```
+
+If the talk/paper/preprint is a "lead author" work
+change the two arrays in the begining of the `cv.typ` script.
+
+If the work is a submitted preprint, edit the `yaml` file with
+a submitted field as follows: (this modification is optional!)
+
+```
+  submitted:
+    journal: "Journal"
+    status: "under review/in press"
+```
 
 The rest of the information is currently hardcoded in the
 `.typ` scrypt.
