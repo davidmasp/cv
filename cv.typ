@@ -14,7 +14,7 @@
     #align(center)[
       #text(9pt, weight: "thin")[
         #text("David Mas-Ponte - Curriculum Vitae - Page")
-        #counter(page).display()
+        #context counter(page).display()
         #text("- Updated: ")
         #datetime.today().display()
       ]
@@ -154,8 +154,6 @@
     counter = counter - 1
   }
 
-
-
 #let sectiontitle(title, annotation) = {
   v(2pt)
   grid(columns: (75%, 25%),
@@ -223,21 +221,19 @@
 )
 }
 
-#let researhsupervision(year, name, type, institution) = {
+#let researhsupervision(year, name, type, institution, currentposition) = {
   grid(
   columns: (15%, 85%),
   column-gutter: 3pt,
   rows: 1,
   align(left)[#year],
   align(left)[
-    #name, #type, #text(style: "italic")[#institution]
+    #name, #type, #text(style: "italic")[#institution] - Currently: #currentposition
   ]
 )
 }
 
-
 // +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-
 
 #text(20pt, weight: "bold")[David Mas-Ponte, PhD]
 
@@ -247,21 +243,25 @@
 #set text(11pt)
 
 #grid(
-  columns: (70%, 30%),
+  columns: (60%, 40%),
   row-gutter: 5pt,
   rows: 3,
-  [Department of Genome Sciences, University of Washington],
-  align(right)[dmas\@uw.edu],
-  [Foege Building (S420) - 3720 15th Ave NE],
+  [Computational Biology Research Centre, Human Technopole],
+  align(right)[david.mas.p\@gmail.com],
+  [Viale Rita Levi-Montalcini, 1],
   align(right)[
     #link("https://david.masponte.com/")[david.masponte.com]
   ],
-  [Seattle, WA 98195 (USA)],
+  [20157 Milano (Italy)],
   align(right)[
       \@davidmasp - 
       #box(
         height: 9pt,
         image("assets/twitterlogo.svg")
+      )
+      #box(
+        height: 9pt,
+        image("assets/bskylogo.svg")
       )
       #box(
         height: 9pt,
@@ -273,7 +273,14 @@
 #sectiontitle([Academic positions], [\* Current]);
 
 #item(
-  [06/2023-\*],
+  [07/2024-\*],
+  [Postdoctoral Scholar],
+  [
+    Andrea Sottoriva lab, Computational Biology Research Centre, Human Technopole
+  ])
+
+#item(
+  [2023-2024],
   [Postdoctoral Scholar],
   [
     Kelley Harris lab, Genome Sciences Deptartment, University of Washington
@@ -354,14 +361,7 @@
 #insert_conferences(yamlfn: "talks.yaml",
                     talkkeys: confkeys)
 
-
-
 #sectiontitle([Research Fellowships], []);
-
-
-//  funding
-// jae intro
-// FPI
 
 #item(
   [2023-2025],
@@ -384,12 +384,12 @@
 #item(
   [2017-2022],
   [
-    Severo Ochoa - Formacion de Personal Investigador (SO-FPI) Fellowship - BES-2017-079820 -
+    Severo Ochoa - Formacion de Personal Investigador (SO-FPI) Fellowship - #box[BES-2017-079820 -
     #text(fill: blue)[
             #underline([
                   #link("https://www.aei.gob.es/sites/default/files/stfls/eSede/Ficheros/2018/RC_PREDOC_2017.pdf")[website]
             ])
-          ]
+          ]]
   ],
   [
     Ministerio de Ciencia
@@ -439,27 +439,23 @@
     // 
   ])
 
-
- 
-
-
-
-
 #sectiontitle([Research Supervision], []);
 
 #researhsupervision(
-  [2023-],
+  [2023-2024],
   [Yu-Chen Pan],
   [MSc student],
-  [U. Washington]
+  [U. Washington],
+  [Bioinformatician at SOPHiA Genetics (Boston)]
 )
-
+ 
 // year, name, type, institution
 #researhsupervision(
   [2017-2018],
   [Marina Salvadores],
   [MSc student],
-  [U. Pompeu Fabra (Bioinformatics)]
+  [U. Pompeu Fabra],
+  [Postdoc with Anja Groth at CPR (Copenhagen)]
 )
 
 #sectiontitle([Academic Service & Awards], []);
@@ -474,11 +470,16 @@
 #award(
   [2018-2019],
   [Scientific Organizing Committee],
-  ['19 ENABLE Conference (Nijmegen, Netherlands)],
+  ['19 ENABLE Conference #box[(Nijmegen, Netherlands)]],
   "https://scb.iec.cat/wp-content/uploads/2021/11/Document_assemblea2021.pdf"
 )
 
-Referee for Evolution, Medicine, and Public Health ('23, '24), WoSid: #text(fill: blue)[ #link("https://www.webofscience.com/wos/author/record/JPL-3000-2023")[JPL-3000-2023]].
+Participated as peer-review referee for:
 
+- Evolution, Medicine, and Public Health ('23, '24).
+- Nature Communications ('24).
+- Genome Research ('25).
+
+Full list at #text(fill: blue)[ #link("https://www.webofscience.com/wos/author/record/JPL-3000-2023")[WoSid-JPL-3000-2023]] and #text(fill: blue)[#link("https://orcid.org/0000-0001-7409-305X")[ORCID-PR]].
 
 

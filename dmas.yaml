@@ -1,25 +1,24 @@
-young2023maternal:
+young2024maternal:
   type: article
   title: A maternal germline mutator phenotype in a family affected by heritable colorectal cancer
-  submitted:
-    journal: "Genetics"
-    status: "under review"
   author:
   - Young, Candice L
   - Beichman, Annabel C
-  - Mas-Ponte, David
+  - Mas Ponte, David
   - Hemker, Shelby L
   - Zhu, Luke
-  - Kitzman, Jacob
+  - Kitzman, Jacob O
   - Shirts, Brian H
   - Harris, Kelley
-  date: 2023
-  page-range: 2023–12
-  url: https://doi.org/10.1101/2023.12.08.23299304
+  date: 2024
+  page-range: iyae166
+  url: https://academic.oup.com/genetics/article/228/4/iyae166/7822255
   parent:
     type: periodical
-    title: medRxiv
-    publisher: Cold Spring Harbor Laboratory Press
+    title: Genetics
+    publisher: Oxford University Press US
+    issue: 4
+    volume: 228
 mas2024mutation:
   type: article
   title: Mutation rate heterogeneity at the sub-gene scale due to local DNA hypomethylation
